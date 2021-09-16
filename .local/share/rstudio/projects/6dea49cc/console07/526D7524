@@ -1,0 +1,4 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;/home/lmendonca/BIBD_GS]0;lmendonca@Shinny-Server: ~/BIBD_GS[01;32mlmendonca@Shinny-Server[00m:[01;34m~/BIBD_GS[00m$ htop

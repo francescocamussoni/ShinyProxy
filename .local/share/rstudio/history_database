@@ -1,0 +1,420 @@
+1630448574565:#2 . Conections ############################
+1630448574566:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1630448574566:driver = "ODBC Driver 17 for SQL Server",
+1630448574567:database = "Investigacion",
+1630448574567:UID    = "lmendonca",
+1630448574568:PWD    = "leandro2018",
+1630448574568:Server = "tcp:VM-AZURE0014.of1.net",
+1630448574569:port = 1433) #PBS
+1630448586956:install.packages("DBI")
+1630448599934:install.packages("odbc")
+1630448669711:#2 . Conections ############################
+1630448669712:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1630448669713:driver = "ODBC Driver 17 for SQL Server",
+1630448669713:database = "Investigacion",
+1630448669714:UID    = "lmendonca",
+1630448669715:PWD    = "leandro2018",
+1630448669715:Server = "tcp:VM-AZURE0014.of1.net",
+1630448669716:port = 1433) #PBS
+1630528724922:library(shiny)
+1630528732438:library(shiny)
+1630528733213:library(DBI)
+1630528734850:library(odbc)
+1630528736013:library(tidyverse)
+1630528736984:library(dbplyr)
+1630528738937:library(reactable)
+1630528773560:install.packages("tidyverse")
+1631187423399:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631187423400:driver = "ODBC Driver 17 for SQL Server",
+1631187423401:database = "Investigacion",
+1631187423401:UID    = "lmendonca",
+1631187423402:PWD    = "leandro2018",
+1631187423402:Server = "tcp:VM-AZURE0014.of1.net",
+1631187423403:port = 1433) #PBS
+1631187622221:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631187622221:driver = "ODBC Driver 17 for SQL Server",
+1631187622222:database = "Investigacion",
+1631187622223:UID    = "lmendonca",
+1631187622223:PWD    = "leandro2018",
+1631187622224:Server = "tcp:VM-AZURE0014.of1.net",
+1631187622224:port = 1433) #PBS
+1631187626200:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187626200:driver = "ODBC Driver 17 for SQL Server",
+1631187626201:database = "PBS_AnalisisEstadistico",
+1631187626201:UID    = "lmendonca",
+1631187626201:PWD    = "leandro2018",
+1631187626202:Server = "tcp:vm-azure0014",
+1631187626202:port = 1433)
+1631187643625:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187643628:driver = "ODBC Driver 17 for SQL Server",
+1631187643629:database = "PBS_AnalisisEstadistico",
+1631187643629:UID    = "lmendonca",
+1631187643630:PWD    = "leandro2018",
+1631187643630:Server = "tcp:vm-azure0014",
+1631187643631:port = 1433)
+1631187673012:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187673013:driver = "ODBC Driver 17 for SQL Server",
+1631187673013:database = "PBS_AnalisisEstadistico",
+1631187673014:UID    = "jclavijo",
+1631187673014:PWD    = "JC2019Gdm",
+1631187673014:Server = "tcp:vm-azure0014",
+1631187673015:port = 1433)
+1631187690912:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631187690913:driver = "ODBC Driver 17 for SQL Server",
+1631187690913:database = "Investigacion",
+1631187690914:UID    = "lmendonca",
+1631187690914:PWD    = "leandro2018",
+1631187690915:Server = "tcp:VM-AZURE0014.of1.net",
+1631187690915:port = 1433) #PBS
+1631187692932:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187692932:driver = "ODBC Driver 17 for SQL Server",
+1631187692933:database = "PBS_AnalisisEstadistico",
+1631187692934:UID    = "lmendonca",
+1631187692934:PWD    = "leandro2018",
+1631187692935:Server = "tcp:vm-azure0014",
+1631187692935:port = 1433)
+1631187703528:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187703528:driver = "ODBC Driver 17 for SQL Server",
+1631187703529:database = "PBS_AnalisisEstadistico",
+1631187703529:UID    = "jclavijo",
+1631187703529:PWD    = "JC2019Gdm",
+1631187703529:Server = "tcp:vm-azure0014",
+1631187703530:port = 1433)
+1631187786998:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187786998:driver = "ODBC Driver 17 for SQL Server",
+1631187786998:database = "PBS_AnalisisEstadistico",
+1631187786999:UID    = "lmendonca",
+1631187786999:PWD    = "leandro2018",
+1631187787000:Server = "tcp:VM-AZURE0014.of1.net",
+1631187787000:port = 1433)
+1631187838299:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631187838299:driver = "ODBC Driver 17 for SQL Server",
+1631187838301:database = "Investigacion",
+1631187838302:UID    = "lmendonca",
+1631187838302:PWD    = "leandro2018",
+1631187838303:Server = "tcp:VM-AZURE0014.of1.net",
+1631187838304:port = 1433) #PBS
+1631187839555:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631187839555:driver = "ODBC Driver 17 for SQL Server",
+1631187839556:database = "PBS_AnalisisEstadistico",
+1631187839556:UID    = "lmendonca",
+1631187839557:PWD    = "leandro2018",
+1631187839557:Server = "tcp:VM-AZURE0014.of1.net",
+1631187839559:port = 1433)
+1631187873740:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631187873741:driver = "ODBC Driver 17 for SQL Server",
+1631187873741:database = "Investigacion_UAT",
+1631187873741:UID    = "lmendonca",
+1631187873744:PWD    = "leandro2018",
+1631187873745:Server = "tcp:VM-AZURE0003.of1.net",
+1631187873745:port = 1433) #PBS
+1631187908877:db_Est_uat <- DBI::dbConnect(odbc::odbc(),
+1631187908878:driver = "ODBC Driver 17 for SQL Server",
+1631187908878:database = "PBS_AnalisisEstadistico_UAT",
+1631187908879:UID    = "lmendonca",
+1631187908879:PWD    = "leandro2018",
+1631187908879:Server = "tcp:VM-AZURE0003.of1.net",
+1631187908880:port = 1433)
+1631188085370:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631188085371:driver = "ODBC Driver 17 for SQL Server",
+1631188085371:database = "Investigacion",
+1631188085372:UID    = "lmendonca",
+1631188085372:PWD    = "leandro2018",
+1631188085373:Server = "tcp:VM-AZURE0014.of1.net",
+1631188085373:port = 1433) #PBS
+1631188087315:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631188087316:driver = "ODBC Driver 17 for SQL Server",
+1631188087316:database = "PBS_AnalisisEstadistico",
+1631188087317:UID    = "lmendonca",
+1631188087317:PWD    = "leandro2018",
+1631188087318:Server = "tcp:VM-AZURE0014.of1.net",
+1631188087319:port = 1433)
+1631188090322:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631188090322:driver = "ODBC Driver 17 for SQL Server",
+1631188090323:database = "Investigacion_UAT",
+1631188090323:UID    = "lmendonca",
+1631188090323:PWD    = "leandro2018",
+1631188090324:Server = "tcp:VM-AZURE0003.of1.net",
+1631188090324:port = 1433) #PBS
+1631188093318:db_Est_uat <- DBI::dbConnect(odbc::odbc(),
+1631188093319:driver = "ODBC Driver 17 for SQL Server",
+1631188093319:database = "PBS_AnalisisEstadistico_UAT",
+1631188093320:UID    = "lmendonca",
+1631188093320:PWD    = "leandro2018",
+1631188093321:Server = "tcp:VM-AZURE0003.of1.net",
+1631188093321:port = 1433)
+1631303769636:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631303769637:driver = "ODBC Driver 17 for SQL Server",
+1631303769637:database = "Investigacion",
+1631303769638:UID    = "jclavijo",
+1631303769638:PWD    = "JC2019Gdm",
+1631303769639:Server = "tcp:VM-AZURE0003.of1.net",
+1631303769639:port = 1433) #PBS
+1631303777133:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631303777134:driver = "ODBC Driver 17 for SQL Server",
+1631303777134:database = "Investigacion",
+1631303777135:UID    = "jclavijo",
+1631303777135:PWD    = "JC2019Gdm",
+1631303777136:Server = "tcp:VM-AZURE0003.of1.net",
+1631303777136:port = 1433) #PBS
+1631303791445:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631303791445:driver = "ODBC Driver 17 for SQL Server",
+1631303791445:database = "Investigacion",
+1631303791446:UID    = "jclavijo",
+1631303791446:PWD    = "JC2019Gdm",
+1631303791447:Server = "tcp:VM-AZURE0003.of1.net",
+1631303791447:port = 1433) #PBS
+1631304127783:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631304127784:driver = "ODBC Driver 17 for SQL Server",
+1631304127785:database = "Investigacion",
+1631304127786:UID    = "lmendonca",
+1631304127786:PWD    = "gws#gdm44",
+1631304127787:Server = "tcp:VM-AZURE0003.of1.net",
+1631304127787:port = 1433) #PBS
+1631304288621:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631304288622:driver = "ODBC Driver 17 for SQL Server",
+1631304288622:database = "Investigacion",
+1631304288623:UID    = "jclavijo",
+1631304288623:PWD    = "JC2019Gdm",
+1631304288624:Server = "tcp:VM-AZURE0003.of1.net",
+1631304288624:port = 1433) #PBS
+1631304317369:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631304317370:driver = "ODBC Driver 17 for SQL Server",
+1631304317370:database = "Investigacion",
+1631304317371:UID    = "jclavijo",
+1631304317371:PWD    = "JC2019Gdm",
+1631304317371:Server = "tcp:VM-AZURE0003",
+1631304317372:port = 1433) #PBS
+1631304349428:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631304349429:driver = "ODBC Driver 17 for SQL Server",
+1631304349429:database = "PBS_AnalisisEstadistico",
+1631304349430:UID    = "jclavijo",
+1631304349430:PWD    = "JC2019Gdm",
+1631304349431:Server = "tcp:vm-azure0003",
+1631304349431:port = 1433)
+1631304388028:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631304388029:driver = "ODBC Driver 17 for SQL Server",
+1631304388029:database = "PBS_AnalisisEstadistico",
+1631304388029:UID    = "jclavijo",
+1631304388030:PWD    = "JC2019Gdm",
+1631304388030:Server = "tcp:vm-azure0003.of1.net",
+1631304388031:port = 1433)
+1631304391147:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631304391148:driver = "ODBC Driver 17 for SQL Server",
+1631304391149:database = "PBS_AnalisisEstadistico",
+1631304391149:UID    = "jclavijo",
+1631304391150:PWD    = "JC2019Gdm",
+1631304391150:Server = "tcp:vm-azure0003.of1.net",
+1631304391151:port = 1433)
+1631304434055:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631304434056:driver = "ODBC Driver 17 for SQL Server",
+1631304434057:database = "PBS_AnalisisEstadistico",
+1631304434057:UID    = "jclavijo",
+1631304434058:PWD    = "JC2019Gdm",
+1631304434058:Server = "tcp:vm-azure0003.of1.net",
+1631304434058:port = 1433)
+1631304479045:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631304479045:driver = "ODBC Driver 17 for SQL Server",
+1631304479046:database = "Investigacion",
+1631304479046:UID    = "lmendonca",
+1631304479047:PWD    = "leandro2018",
+1631304479047:Server = "tcp:VM-AZURE0014.of1.net",
+1631304479048:port = 1433) #PBS
+1631304540378:# UAT2
+1631304540379:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304540379:driver = "ODBC Driver 17 for SQL Server",
+1631304540380:database = "Investigacion",
+1631304540380:UID    = "lmendonca",
+1631304540381:PWD    = "leandro2018",
+1631304540381:Server = "tcp:VM-AZURE0003.of1.net",
+1631304540381:port = 1433) #PBS
+1631304547917:# teste
+1631304547918:db_Est_uat <- DBI::dbConnect(odbc::odbc(),
+1631304547918:driver = "ODBC Driver 17 for SQL Server",
+1631304547919:database = "PBS_AnalisisEstadistico",
+1631304547919:UID    = "lmendonca",
+1631304547920:PWD    = "leandro2018",
+1631304547921:Server = "tcp:VM-AZURE0003.of1.net",
+1631304547921:port = 1433)
+1631304555329:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304555330:driver = "ODBC Driver 17 for SQL Server",
+1631304555330:database = "Investigacion_UAT",
+1631304555331:UID    = "lmendonca",
+1631304555331:PWD    = "leandro2018",
+1631304555332:Server = "tcp:VM-AZURE0003.of1.net",
+1631304555332:port = 1433) #PBS
+1631304556785:db_Est_uat <- DBI::dbConnect(odbc::odbc(),
+1631304556786:driver = "ODBC Driver 17 for SQL Server",
+1631304556786:database = "PBS_AnalisisEstadistico_UAT",
+1631304556786:UID    = "lmendonca",
+1631304556787:PWD    = "leandro2018",
+1631304556788:Server = "tcp:VM-AZURE0003.of1.net",
+1631304556788:port = 1433)
+1631304559270:# UAT2
+1631304559271:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304559272:driver = "ODBC Driver 17 for SQL Server",
+1631304559272:database = "Investigacion",
+1631304559273:UID    = "lmendonca",
+1631304559273:PWD    = "leandro2018",
+1631304559274:Server = "tcp:VM-AZURE0003.of1.net",
+1631304559274:port = 1433) #PBS
+1631304560934:# teste
+1631304560934:db_Est_uat <- DBI::dbConnect(odbc::odbc(),
+1631304560935:driver = "ODBC Driver 17 for SQL Server",
+1631304560935:database = "PBS_AnalisisEstadistico",
+1631304560935:UID    = "lmendonca",
+1631304560936:PWD    = "leandro2018",
+1631304560936:Server = "tcp:VM-AZURE0003.of1.net",
+1631304560937:port = 1433)
+1631304563190:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631304563191:driver = "ODBC Driver 17 for SQL Server",
+1631304563191:database = "PBS_AnalisisEstadistico",
+1631304563192:UID    = "jclavijo",
+1631304563192:PWD    = "JC2019Gdm",
+1631304563192:Server = "tcp:vm-azure0003.of1.net",
+1631304563193:port = 1433)
+1631304588898:# UAT2
+1631304588898:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304588899:driver = "ODBC Driver 17 for SQL Server",
+1631304588899:database = "Investigacion",
+1631304588900:UID    = "lmendonca",
+1631304588900:PWD    = "leandro2018",
+1631304588900:Server = "tcp:VM-AZURE0003.of1.net",
+1631304588901:port = 1433) #PBS
+1631304600831:# UAT2
+1631304600832:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304600832:driver = "ODBC Driver 17 for SQL Server",
+1631304600833:database = "Investigacion",
+1631304600833:UID    = "lmendonca",
+1631304600834:PWD    = "leandro2018",
+1631304600834:Server = "tcp:VM-AZURE0003",
+1631304600835:port = 1433) #PBS
+1631304647330:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304647331:driver = "ODBC Driver 17 for SQL Server",
+1631304647331:database = "Investigacion_UAT",
+1631304647331:UID    = "lmendonca",
+1631304647332:PWD    = "leandro2018",
+1631304647332:Server = "tcp:VM-AZURE0003.of1.net",
+1631304647333:port = 1433) #PBS
+1631304750452:db_Inv <- DBI::dbConnect(odbc::odbc(),
+1631304750453:driver = "ODBC Driver 17 for SQL Server",
+1631304750453:database = "Investigacion",
+1631304750454:UID    = "lmendonca",
+1631304750454:PWD    = "leandro2018",
+1631304750454:Server = "tcp:VM-AZURE0014.of1.net",
+1631304750455:port = 1433) #PBS
+1631304806144:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304806144:driver = "ODBC Driver 17 for SQL Server",
+1631304806145:database = "Investigacion_UAT",
+1631304806145:UID    = "lmendonca",
+1631304806145:PWD    = "leandro2018",
+1631304806146:Server = "tcp:VM-AZURE0003.of1.net",
+1631304806146:port = 1433) #PBS
+1631304932958:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304932959:driver = "ODBC Driver 17 for SQL Server",
+1631304932959:database = "Investigacion_UAT",
+1631304932960:UID    = "lmendonca",
+1631304932960:PWD    = "leandro2018",
+1631304932961:Server = "tcp:VM-AZURE0003.of1.net",
+1631304932961:port = 1433) #PBS
+1631304937998:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631304937998:driver = "ODBC Driver 17 for SQL Server",
+1631304937999:database = "Investigacion_UAT",
+1631304937999:UID    = "lmendonca",
+1631304937999:PWD    = "leandro2018",
+1631304938000:Server = "tcp:VM-AZURE0003",
+1631304938000:port = 1433) #PBS
+1631305251471:# UAT2
+1631305251472:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305251472:driver = "ODBC Driver 17 for SQL Server",
+1631305251473:database = "Investigacion",
+1631305251473:UID    = "lmendonca",
+1631305251474:PWD    = "leandro2018",
+1631305251474:Server = "tcp:VM-AZURE0003.of1.net",
+1631305251474:port = 1433) #PBS
+1631305266540:# UAT2
+1631305266541:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305266542:driver = "ODBC Driver 17 for SQL Server",
+1631305266542:database = "Investigacion_UAT",
+1631305266542:UID    = "lmendonca",
+1631305266543:PWD    = "leandro2018",
+1631305266543:Server = "tcp:VM-AZURE0003.of1.net",
+1631305266544:port = 1433) #PBS
+1631305333626:# UAT2
+1631305333626:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305333627:driver = "ODBC Driver 17 for SQL Server",
+1631305333627:database = "Investigacion",
+1631305333628:UID    = "jclavijo",
+1631305333628:PWD    = "JC2019Gdm",
+1631305333628:Server = "tcp:VM-AZURE0003.of1.net",
+1631305333629:port = 1433) #PBS
+1631305396462:# UAT2
+1631305396463:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305396463:driver = "ODBC Driver 17 for SQL Server",
+1631305396464:database = "Investigacion",
+1631305396464:UID    = "lmendonca",
+1631305396465:PWD    = "leandro2018",
+1631305396465:Server = "tcp:VM-AZURE0003.of1.net",
+1631305396465:port = 1433) #PBS
+1631305500716:# UAT2
+1631305500716:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305500717:driver = "ODBC Driver 17 for SQL Server",
+1631305500717:database = "Investigacion",
+1631305500717:UID    = "lmendonca",
+1631305500718:PWD    = "leandro2018",
+1631305500718:Server = "tcp:VM-AZURE0003.of1.net",
+1631305500719:port = 1433) #PBS
+1631305523934:# UAT2
+1631305523934:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305523935:driver = "ODBC Driver 17 for SQL Server",
+1631305523935:database = "Investigacion",
+1631305523936:UID    = "lmendonca",
+1631305523936:PWD    = "gws#gdm44",
+1631305523937:Server = "tcp:VM-AZURE0003.of1.net",
+1631305523937:port = 1433) #PBS
+1631305536162:# UAT2
+1631305536163:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305536163:driver = "ODBC Driver 17 for SQL Server",
+1631305536164:database = "Investigacion",
+1631305536164:UID    = "lmendonca",
+1631305536164:PWD    = "gdddd",
+1631305536165:Server = "tcp:VM-AZURE0003.of1.net",
+1631305536165:port = 1433) #PBS
+1631305543860:# UAT2
+1631305543861:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305543861:driver = "ODBC Driver 17 for SQL Server",
+1631305543862:database = "Investigacion",
+1631305543862:UID    = "lmendonca",
+1631305543862:PWD    = "leandro2018",
+1631305543863:Server = "tcp:VM-AZURE0003.of1.net",
+1631305543863:port = 1433) #PBS
+1631305550808:# UAT2
+1631305550809:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305550809:driver = "ODBC Driver 17 for SQL Server",
+1631305550810:database = "Investigacion",
+1631305550810:UID    = "lmendonca",
+1631305550810:PWD    = "leandro2018",
+1631305550811:Server = "tcp:VM-AZURE0003.of1.net",
+1631305550811:port = 1433) #PBS
+1631305555570:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305555570:driver = "ODBC Driver 17 for SQL Server",
+1631305555571:database = "Investigacion",
+1631305555571:UID    = "lmendonca",
+1631305555572:PWD    = "leandro2018",
+1631305555572:Server = "tcp:VM-AZURE0003.of1.net",
+1631305555573:port = 1433) #PBS
+1631305601090:# UAT2
+1631305601090:db_Inv_uat <- DBI::dbConnect(odbc::odbc(),
+1631305601091:driver = "ODBC Driver 17 for SQL Server",
+1631305601091:database = "Investigacion",
+1631305601091:UID    = "analiticar",
+1631305601092:PWD    = "ArRvSb20$15",
+1631305601092:Server = "tcp:VM-AZURE0003.of1.net",
+1631305601093:port = 1433) #PBS
+1631305733289:db_Est <- DBI::dbConnect(odbc::odbc(),
+1631305733289:driver = "ODBC Driver 17 for SQL Server",
+1631305733290:database = "PBS_AnalisisEstadistico",
+1631305733290:UID    = "lmendonca",
+1631305733291:PWD    = "leandro2018",
+1631305733291:Server = "tcp:VM-AZURE0003.of1.net",
+1631305733291:port = 1433)

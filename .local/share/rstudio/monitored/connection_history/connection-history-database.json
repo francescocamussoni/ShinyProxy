@@ -1,0 +1,296 @@
+[
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "lmendonca_Investigacion_VM-AZURE0014"
+        },
+        "connect_code": "library(DBI)\ndb_Inv <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"Investigacion\", UID = \"lmendonca\", PWD = \"leandro2018\", \n    Server = \"tcp:VM-AZURE0014.of1.net\", port = 1433)",
+        "display_name": "Investigacion - lmendonca@VM-AZURE0014",
+        "last_used": 1631304750548.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    },
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "lmendonca_PBS_AnalisisEstadistico_VM-AZURE0014"
+        },
+        "connect_code": "library(DBI)\ndb_Est <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"PBS_AnalisisEstadistico\", UID = \"lmendonca\", \n    PWD = \"leandro2018\", Server = \"tcp:VM-AZURE0014.of1.net\", \n    port = 1433)",
+        "display_name": "PBS_AnalisisEstadistico - lmendonca@VM-AZURE0014",
+        "last_used": 1631188087514.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    },
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "lmendonca_Investigacion_UAT_VM-AZURE0003"
+        },
+        "connect_code": "library(DBI)\ndb_Inv_uat <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"Investigacion_UAT\", UID = \"lmendonca\", PWD = \"leandro2018\", \n    Server = \"tcp:VM-AZURE0003.of1.net\", port = 1433)",
+        "display_name": "Investigacion_UAT - lmendonca@VM-AZURE0003",
+        "last_used": 1631305266606.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    },
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "lmendonca_PBS_AnalisisEstadistico_UAT_VM-AZURE0003"
+        },
+        "connect_code": "library(DBI)\ndb_Est_uat <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"PBS_AnalisisEstadistico_UAT\", UID = \"lmendonca\", \n    PWD = \"leandro2018\", Server = \"tcp:VM-AZURE0003.of1.net\", \n    port = 1433)",
+        "display_name": "PBS_AnalisisEstadistico_UAT - lmendonca@VM-AZURE0003",
+        "last_used": 1631304556829.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    },
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "lmendonca_PBS_AnalisisEstadistico_VM-AZURE0003"
+        },
+        "connect_code": "library(DBI)\ndb_Est <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"PBS_AnalisisEstadistico\", UID = \"lmendonca\", \n    PWD = \"leandro2018\", Server = \"tcp:VM-AZURE0003.of1.net\", \n    port = 1433)",
+        "display_name": "PBS_AnalisisEstadistico - lmendonca@VM-AZURE0003",
+        "last_used": 1631305733369.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    },
+    {
+        "id": {
+            "type": "Microsoft SQL Server",
+            "host": "dbo_Investigacion_VM-AZURE0003"
+        },
+        "connect_code": "library(DBI)\ndb_Inv_uat <- DBI::dbConnect(odbc::odbc(), driver = \"ODBC Driver 17 for SQL Server\", \n    database = \"Investigacion\", UID = \"analiticar\", PWD = \"ArRvSb20$15\", \n    Server = \"tcp:VM-AZURE0003.of1.net\", port = 1433)",
+        "display_name": "Investigacion - dbo@VM-AZURE0003",
+        "last_used": 1631305601166.0,
+        "actions": [
+            {
+                "name": "SQL",
+                "icon_path": "/home/lmendonca/R/x86_64-pc-linux-gnu-library/4.0/odbc/icons/edit-sql.png",
+                "icon_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gUPERoh5nuszQAAArpJREFUWMPtmE1IVFEUx3/3vRl8zlSU1ZukhCc1xtOI8DNpSPqCoihctChcFNGmFiGE2a5VmxZJkEhRERlEgdI3lIvC2rQoCvpwURkEpflRk+M4b95HixlJbHBGZyyr+cOB+y4H7u+cc+/l3QNZ/eMSyRxUTS8ClsR9x5oUt/HfY+dHx2+BF73dr0cyHoGq6eudNHS17brzoPNxm6rpq1VNVya7vpSJLCdTVXlp7ZWLZxqBMlXTc2ccoKIoVFeW77h8vqURqJgMpCvRZG2nI4AKoCr8+cPWxucQjMKwBWEr5pMrg0eGOW4o8EChF/yzYdnsxBEpikKgunJb67lmqW7fgROqpj/p7X49nAxQTgC3BbgNHAG2uGfNXdZvwJAJERtsJ2YROzbXb8D7EDwdhI4e6PwC+bkxA3j1posSfXksGy4Xi/MX+UtXrVzUfvPOR+/chZ9DX/uiky3xBcA/1XJ+CkNT18TlrglUb77QcqoBCKia7pkUoCLwpbPpQkMj3Ot4lXRPrq8JbDrX3NQA1Kia7k15D8pAjm0TtWxMx8FBgBAgCYQQCCmGb1s2pmVjjET5HgzzbTDEQF+Qvt4glmWndHA2rlu74ezpk/L+g/UycCulE1r3yHEsy8Y0LaLRmBmGiWGYRCImEcPEiER/juM26muaFpZl4zSvAeBa+w3evutOCnz08CGR8inOpHbWbk/q4yssPp7OPfg7JGcB05SUzeC/nsEsYBbwrwLsSXe1PK9rWgH3xl9hU9LSBQqte4oyBvhLqK0BcXfXQ8s/+ssf+vBy94ri4tWfgjYDliBixPw8bol5OS7yctz457sp8SmUFXgpL/AiROZKnMqzs96ZZqmafikdcmmmn+LfASjSWVye6RmU/2QGU7mwnvkKi4/Fg5HHNYjkBE0jaYJmUqKmkwDuZ/t4/61+AJNnfJUOBDfZAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "Help",
+                "icon_path": "",
+                "icon_data": "connections/actions/help.png"
+            }
+        ],
+        "object_types": [
+            {
+                "name": "catalog",
+                "contains": "schema",
+                "icon_path": "",
+                "icon_data": "connections/objects/catalog.png"
+            },
+            {
+                "name": "schema",
+                "contains": "table",
+                "icon_path": "",
+                "icon_data": "connections/objects/schema.png"
+            },
+            {
+                "name": "table",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/table.png"
+            },
+            {
+                "name": "view",
+                "contains": "",
+                "icon_path": "",
+                "icon_data": "connections/objects/view.png"
+            }
+        ],
+        "icon_path": "",
+        "icon_data": "connections/drivers/microsoftsqlserver.png"
+    }
+]

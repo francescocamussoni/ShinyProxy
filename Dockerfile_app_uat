@@ -1,0 +1,57 @@
+FROM openanalytics/r-base
+
+#update all packages
+RUN apt-get update
+
+#upgrade
+#RUN apt-get upgrade -y
+
+#install additional packages
+RUN apt install gpg-agent -y unixodbc apt-utils curl unixodbc-dev \
+    sudo \
+    pandoc \
+    pandoc-citeproc \
+    libcurl4-gnutls-dev \
+    libcairo2-dev \
+    libxt-dev \
+    libssl-dev \
+    libssh2-1-dev \
+    libssl1.1 \
+    libmpfr-dev \
+    libxml2-dev
+
+# R packages
+RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('Rmpfr', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('shinydashboard', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('xml2')"
+RUN R -e "install.packages('rvest')"
+RUN R -e "install.packages('plotly', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('reactable', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('tidyverse')"
+RUN R -e "install.packages('DBI')"
+
+#get msodbcsql17 and install it
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+RUN curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
+RUN apt-get update -y
+RUN ACCEPT_EULA=Y apt-get install -y msodbcsql17
+RUN ACCEPT_EULA=Y apt-get install -y mssql-tools
+
+#install packaes needed for running the app
+RUN R -e "install.packages(c('odbc', 'data.table'))"
+
+# copy the app to the image
+RUN mkdir /root/BIBD_GS
+COPY BIBD_GS /root/BIBD_GS
+
+# copy the openssl.cnf file
+#COPY openssl_test.cnf /etc/ssl/
+COPY openssl.cnf /etc/ssl/
+
+# para que inicialice el container
+COPY Rprofile.site /usr/lib/R/etc/
+
+EXPOSE 3838
+
+CMD ["R", "-e", "shiny::runApp('/root/BIBD_GS/src/r/shiny/app_uat.R')"]
